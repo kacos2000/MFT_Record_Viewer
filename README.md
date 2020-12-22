@@ -110,4 +110,27 @@ and I pressume that the 0x00000010 'Directory' bit is not beeing used in the $Fi
 
   - When the $File_Name attribute flag "Reparse Point” (0x400) is set to 0, flag "Recall_On_Open" (0x00040000) is set to 1, and there is no '$Reparse_point' attribute in the record, but there is an $EA present, offset 0x3C (60) from the start of the $File_Name attribute shows the 32bit size of the buffer needed for the $EA attribute.
 
+### $Index_Root attribute:
+The correct *(and basically undocumented)* index entry flags are:
+ ```
+             "00" = Child node
+             "01" = Child node in $Index_Allocation
+             "02" = Last Entry"
+             "03" = Last Entry, Child node in $Index_Allocation
+```
+Filename index entries fields:
+```
+       0x10 	6 	MFT File Record of the parent
+       0x16 	2 	MFT File Record Sequence Nr
+       0x18 	8 	File creation time
+       0x20 	8 	Last modification time
+       0x28 	8 	Last modification time for FILE record
+       0x30 	8 	Last access time
+       0x38 	8 	Allocated size of file
+       0x40 	8 	Real size of file
+       0x48 	8 	File Flags
+       0x50 	1 	Length of filename (F)
+       0x51 	1 	Filename namespace
+       0x52 	2F 	Filename'
+```
 ._
