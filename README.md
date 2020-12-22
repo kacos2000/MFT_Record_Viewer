@@ -120,7 +120,7 @@ The correct *(and basically undocumented)* index entry flags are:
 ```
 Filename index entries fields:
 ```
-       0x10 	6 	MFT File Record of the parent
+       0x10 	6 	MFT File Record 
        0x16 	2 	MFT File Record Sequence Nr
        0x18 	8 	File creation time
        0x20 	8 	Last modification time
