@@ -94,7 +94,7 @@ According to [Microsoft](https://docs.microsoft.com/en-us/windows/win32/fileio/f
   0x00040000|0000-0000-0000-0100-0000-0000-0000-0000|Recall_On_Open
   0x00400000|0000-0000-0100-0000-0000-0000-0000-0000|Recall_On_DataAccess
 
-The $File_Name Attribute flags are the same as in $Standard_definition *(above list)*, but with a couple of exceptionns. As noted above, there are two extra flags which 'copy' the respective flags of the record header. When one is set in the header, the same is set in the $File_Name attribute. These flags are:
+The $File_Name Attribute & $Index_Root flags are the same as in $Standard_definition *(above list)*, but with a couple of exceptions. As noted above, there are two extra flags which 'copy' the respective flags of the record header. When one is set in the header, the same is set in the $File_Name attribute. These flags are:
 
   Hex|Binary|Description
   ----------|---------------------------------------|------------------
