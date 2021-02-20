@@ -94,10 +94,6 @@ According to [Microsoft](https://docs.microsoft.com/en-us/windows/win32/fileio/f
   0x00040000|0000-0000-0000-0100-0000-0000-0000-0000|Recall_On_Open
   0x00400000|0000-0000-0100-0000-0000-0000-0000-0000|Recall_On_DataAccess
 
-Note: I suspect that the undocumented flag: [0x06000000](https://twitter.com/port139/status/1011932508651282432) which appears in $Standard_Information *(usually in the $Txf folder)* denotes that the record supports Transactions and therefore has a $Logged_Utility_Stream Attribute ([Windows Internals - Chapter 12, Transaction Support](https://repo.zenk-security.com/Linux%20et%20systemes%20d.exploitations/Windows%20Internals%20Part%202_6th%20Edition.pdf)) 
-
-
-
 The $File_Name Attribute & $Index_Root flags are the same as in $Standard_Information *(above list)*, but with a couple of exceptions. As noted above, there are two extra flags which 'copy' the respective flags of the record header. When one is set in the header, the same is set in the $File_Name attribute. These flags are:
 
   Hex|Binary|Description
