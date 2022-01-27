@@ -1,4 +1,3 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=69L3MWGCKVMA6)
 # [MFT_Record_Viewer](https://github.com/kacos2000/MFT_Record_Viewer/releases/latest)
 
 *Designed to view the details of few sets of $MFT FILE records, basically as a research project & for tool verification.
