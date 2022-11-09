@@ -1,5 +1,7 @@
 # [MFT_Record_Viewer](https://github.com/kacos2000/MFT_Record_Viewer/releases/latest)
 
+**>>> NOT supported - Check [MFTbrowser](https://github.com/kacos2000/MFT_Browser#readme) instead <<<**
+
 *Designed to view the details of few sets of $MFT FILE records, basically as a research project & for tool verification.
 Try not to load more than a few hundred records at a time inorder for the app to work properly.*
 
